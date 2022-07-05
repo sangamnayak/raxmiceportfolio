@@ -1,0 +1,18 @@
+<section class="two light">
+    <h2 class="hsub">Things I Can</h2>
+    <% var k=0; %>
+    <% for (var j=0; j<data.length%3+1; j++){ %>
+        <div class="love">
+            <% for (var i=0+k; i<3+k; i++){ %>
+            <% if(i<data.length){ %>
+            <% var src=data[i].img; var alt=data[i].alt; var chead=data[i].chead; var des=data[i].description; %>
+            <div class="card">
+                <img src="<%=src%>" alt="<%=alt%>" class="cicon">
+                <h3 class="chead"><%=chead%></h3>
+                <p class="des"><%=des%></p>
+            </div>
+            <% }else{break;}} %>
+        </div>
+    <% k=k+3; %>
+    <% } %>
+</section>

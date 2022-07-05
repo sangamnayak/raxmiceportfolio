@@ -1,0 +1,28 @@
+<section class="motivation">
+    <% var k=0; %>
+    <% for (var j=0; j<motiv.length%3+1; j++){ %>
+    <div class="motiv space-between">
+            <% for (var i=0+k; i<3+k; i++){ %>
+            <% if(i<motiv.length){ %>
+            <% var line=motiv[i].lines; var author=motiv[i].author; %>
+            <div class="thoghts">
+            <p><%=line%></p>
+            <p class="author">- <%= author %></p>
+        </div>
+        <% }else{break;}} %>
+    </div>
+    <% k=k+3; %>
+    <% } %>
+</section>
+
+<!-- for tab -->
+<section class="motivation-tab">
+            <% for (var i=0; i<motiv.length; i++){ %>
+            <% var line=motiv[i].lines; var author=motiv[i].author; %>
+            <div class="thoghts">
+            <p><%=line%></p>
+            <p class="author">- <%= author %></p>
+        </div>
+    </div>
+    <% } %>
+</section>

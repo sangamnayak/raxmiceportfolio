@@ -1,0 +1,58 @@
+.two{
+    text-align: center;
+}
+.love{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    text-align: center;
+    background-color: #323232;
+    max-width: 230px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 1px 15px 1px rgba(35,35,35,0.3);
+}
+.hsub{
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+}
+.cicon{
+    width: 50px; height: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #6D83F2;
+}
+.des{
+    margin: 0 auto;
+    max-width: 300px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1000px) {
+    .love{
+        display: block;
+    }
+    .card{
+        max-width: 280px;
+    }
+    .cicon{
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (min-width: 300px) and (max-width: 680px) {
+    .love{
+        display: block;
+    }
+    .cicon{
+        width: 40px; height: 40px;
+        padding: 18px;
+    }
+    .des{
+        margin: 0 auto;
+        max-width: auto;
+    }
+}
