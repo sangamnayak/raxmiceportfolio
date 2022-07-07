@@ -33,11 +33,39 @@ function mode(){
   }
         
   
+// //light mode 
+// function light(){
+//   $("#mode").attr({src:"img/moon.svg" , alt:"moon"});
+//   $("header,body,.card,.thoghts,.about-p,.cform").css("background-color","#ffffff");
+//   $(".links").css("color","#232323");
+//   $(".light,.thoghts,.about-p").css("color","#383838"); 
+//   $(".aml").css("color","#f8f8f8");
+//   $(".aboutbox").css("background-color","#6D83F2");
+//   $(".s").css("color","#B8C3FF");
+//   $(".fullname,.email,.tel,.message").css("border","3px solid #6D83F2")
+//   first();
+// }
+// //dark mode
+// function dark(){
+//   $("#mode").attr({src:"img/sun.svg" , alt:"sun"});
+//   $("header,.thoghts,.about-p,.cform").css("background-color","#232323");
+//   $("body").css("background-color","#191919");
+//   $(".links").css("color","#ffffff");
+//   $(".light,.thoghts,.about-p").css("color","#f8f8f8");
+//   $(".card").css("background-color","#323232");
+//   $(".aboutbox").css("background-color","#323232");
+//   $(".s").css("color","#303030");
+//   $(".fullname,.email,.tel,.message").css("border","3px solid #323232")
+//   first();
+// }
+
 //light mode 
 function light(){
-  $("#mode").attr({src:"img/moon.svg" , alt:"moon"});
+  $(".navlink").css("background-color","#f8f8f8");
+  $("#mode,.navmode").attr({src:"img/moon.svg" , alt:"moon"});
   $("header,body,.card,.thoghts,.about-p,.cform").css("background-color","#ffffff");
-  $(".links").css("color","#232323");
+  $(".links,.nl").css("color","#232323");
+  $(".navmode").css("background-color","#232323");
   $(".light,.thoghts,.about-p").css("color","#383838"); 
   $(".aml").css("color","#f8f8f8");
   $(".aboutbox").css("background-color","#6D83F2");
@@ -47,11 +75,12 @@ function light(){
 }
 //dark mode
 function dark(){
-  $("#mode").attr({src:"img/sun.svg" , alt:"sun"});
+  $(".navlink").css("background-color","#6D83F2");
+  $("#mode,.navmode").attr({src:"img/sun.svg" , alt:"sun"});
   $("header,.thoghts,.about-p,.cform").css("background-color","#232323");
   $("body").css("background-color","#191919");
   $(".links").css("color","#ffffff");
-  $(".light,.thoghts,.about-p").css("color","#f8f8f8");
+  $(".light,.thoghts,.about-p,.nl").css("color","#f8f8f8");
   $(".card").css("background-color","#323232");
   $(".aboutbox").css("background-color","#323232");
   $(".s").css("color","#303030");
