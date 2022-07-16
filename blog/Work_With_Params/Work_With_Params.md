@@ -6,11 +6,11 @@ You can see this page url "raxmice.in/post/Work_with_Params". I used Params in t
 
 ## Screenshots For Better Understanding
 
-![App Screenshot](https://sangamnayak.github.io/raxmiceportfolio/blog/work_with_params/Screenshot1.png)
+![App Screenshot](https://sangamnayak.github.io/raxmiceportfolio/blog/Work_With_Params/Screenshot1.png)
 When we click on Read more.
 
 This page will open
-![App Screenshot](https://sangamnayak.github.io/raxmiceportfolio/blog/work_with_params/Screenshot2.png)
+![App Screenshot](https://sangamnayak.github.io/raxmiceportfolio/blog/Work_With_Params/Screenshot2.png)
 
 Here no path exeisting With "blog/OK". It's creating by params, so there is a problem with Linking to .css and .js files.
  
