@@ -12,7 +12,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.head,.one,.two,.about,.motivation,.skills,.projects,.contact,.post{
+.head,.one,.two,.about,.motivation,.skills,.projects,.contact,.post,.blogs{
     max-width: 1080px;
     margin: 0 auto;
 }
