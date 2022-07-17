@@ -63,7 +63,7 @@ function mode(){
 function light(){
   $(".navlink").css("background-color","#f8f8f8");
   $("#mode,.navmode").attr({src:"img/moon.svg" , alt:"moon"});
-  $("header,body,.card,.thoghts,.about-p,.cform").css("background-color","#ffffff");
+  $("header,body,.card,.thoghts,.about-p,.cform,.blog-card").css("background-color","#ffffff");
   $(".links,.nl").css("color","#232323");
   $(".navmode").css("background-color","#232323");
   $(".light,.thoghts,.about-p").css("color","#383838"); 
@@ -81,7 +81,7 @@ function dark(){
   $("body").css("background-color","#191919");
   $(".links").css("color","#ffffff");
   $(".light,.thoghts,.about-p,.nl").css("color","#f8f8f8");
-  $(".card").css("background-color","#323232");
+  $(".card,.blog-card").css("background-color","#323232");
   $(".aboutbox").css("background-color","#323232");
   $(".s").css("color","#303030");
   $(".fullname,.email,.tel,.message").css("border","3px solid #323232")
