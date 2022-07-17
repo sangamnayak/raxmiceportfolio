@@ -6,7 +6,7 @@ You can see this page url "raxmice.in/post/Work_with_Params". I used Params in t
 
 ## Screenshots For Better Understanding
 
-![App Screenshot](https://sangamnayak.github.io/raxmiceportfolio/blog/Work_With_Params/Screenshot1.png)
+![App Screenshot](https://sangamnayak.github.io/raxmiceportfolio/blog/Work_With_Params/St1.png)
 When we click on Read more.
 
 This page will open
