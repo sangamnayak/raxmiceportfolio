@@ -1,0 +1,27 @@
+<div class="headmargin"></div>
+<style>
+    .post,.mypost{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+    .headmargin{
+    margin-top: 70px;
+}
+p img{
+    width: 100%;
+}
+</style>
+<div class="headmargin"></div>
+<section class="post light">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+        <div id="mypost"></div>
+        <script>
+        fetch('https://sangamnayak.github.io/raxmiceportfolio/blog/<%=title%>/<%=title%>.md').then(response => response.text())
+        .then(data => {
+        var converter = new showdown.Converter();
+        var md = data;
+        var html = converter.makeHtml(md);
+        document.querySelector('#mypost').innerHTML = html;
+        });
+        </script>
+</section>

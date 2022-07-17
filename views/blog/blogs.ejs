@@ -1,0 +1,36 @@
+<div class="headmargin"></div>
+<section class="blogs light">
+    <div class="blog">
+        <% posts.forEach(function(data){ %>
+              <main class="blog-card">
+                <div class="dt"><img src="img/calendar.svg" alt="calendar" class="cal pupdate"><h4><%= data.dt %></h4><img src="img/time.svg" alt="time" class="time pupdate"><h4><%= data.tm %></h4></div>
+                <h1><%= data.title %></h1>
+                <% let title=data.title; %>
+                <% title=title.replaceAll(' ', '_'); %>
+                <p class="fs-5 col-md-8"><%= data.description.substring(0, 100)+" ... " %><a class="read-more" href="post/<%=title%>">Read more</a></p>
+                <% let codes = JSON.stringify(data); %>
+                <% codes = codes.substring(codes.indexOf('[')+1,codes.lastIndexOf(']')); %>
+                <% codes=codes.replaceAll(',', ' '); %>
+                <% codes = codes.split(" "); %>
+                <% codes.forEach((code)=>{ %>
+                <a class="tag"><%= code %></a>
+                <% }); %>
+            </main>
+            <% });%>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+        <div id="mypost"></div>
+        <script>
+        fetch('https://sangamnayak.github.io/raxmiceportfolio/blog/README.md').then(response => response.text())
+        .then(data => {
+        var converter = new showdown.Converter();
+        var md = data;
+        var html = converter.makeHtml(md);
+        document.querySelector('#mypost').innerHTML = html;
+        });
+        </script> -->
+    </div>
+    <div class="tags">
+    
+    </div>
+</section>
