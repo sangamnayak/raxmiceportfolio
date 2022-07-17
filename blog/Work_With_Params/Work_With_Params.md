@@ -15,7 +15,7 @@ This page will open
 Here no path exeisting With "blog/OK". It's creating by params, so there is a problem with Linking to .css and .js files.
  
 ## Codes
-Normally we link
+Normally we link.
 ```bash
 <link rel="stylesheet" href="css/motivation.css">
 <link rel="stylesheet" href="css/skills.css">
