@@ -67,7 +67,7 @@ function light(){
   $(".links,.nl").css("color","#232323");
   $(".navmode").css("background-color","#232323");
   $(".light,.thoghts,.about-p").css("color","#383838"); 
-  $(".aml,.bash").css("color","#f8f8f8");
+  $(".aml").css("color","#f8f8f8");
   $(".aboutbox").css("background-color","#6D83F2");
   $(".s").css("color","#B8C3FF");
   $(".fullname,.email,.tel,.message").css("border","3px solid #6D83F2")
