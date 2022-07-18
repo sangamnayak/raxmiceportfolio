@@ -33,7 +33,7 @@ Normally we link.
 But in Params page, it can't find these paths.
 
 ```bash
-<<link rel="stylesheet" href="https://github.io/raxmice/public/css/motivation.css">
+<link rel="stylesheet" href="https://github.io/raxmice/public/css/motivation.css">
 <link rel="stylesheet" href="https://github.io/raxmice/public/css/skills.css">
 <link rel="stylesheet" href="https://github.io/raxmice/public/css/projects.css">
 <link rel="stylesheet" href="https://github.io/raxmice/public/css/contact.css">
