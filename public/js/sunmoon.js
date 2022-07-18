@@ -67,7 +67,7 @@ function light(){
   $(".links,.nl").css("color","#232323");
   $(".navmode").css("background-color","#232323");
   $(".light,.thoghts,.about-p").css("color","#383838"); 
-  $(".aml,per").css("color","#f8f8f8");
+  $(".aml,.bash").css("color","#f8f8f8");
   $(".aboutbox").css("background-color","#6D83F2");
   $(".s").css("color","#B8C3FF");
   $(".fullname,.email,.tel,.message").css("border","3px solid #6D83F2")
@@ -83,7 +83,7 @@ function dark(){
   $(".light,.thoghts,.about-p,.nl").css("color","#f8f8f8");
   $(".card,.blog-card").css("background-color","#323232");
   $(".aboutbox").css("background-color","#323232");
-  $(".s,per").css("color","#303030");
+  $(".s").css("color","#303030");
   $(".fullname,.email,.tel,.message").css("border","3px solid #323232")
   first();
 }
