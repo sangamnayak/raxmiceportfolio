@@ -1,63 +1,60 @@
-/*header*/
-header{
-    position:fixed;
-    z-index: 12;
-    top:0; right: -5px;
-    width: 100vw;
-    background-color: #232323;
-    box-shadow: 0px 3px 15px 0px rgba(35,35,35,0.3);
-}
-.head, .h-links{
-    display: flex;
+@import url('variables.css');
+@import url('./fonts/font.css');
+
+.header{
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.head,.one,.two,.about,.motivation,.skills,.projects,.contact,.post,.blogs{
-    max-width: 1080px;
-    margin: 0 auto;
-}
-.head{
-    padding: 0 20px;
-}
-.logo{
-    font-family: 'Rubik Moonrocks', cursive;
-    color: #6D83F2;
-}
-.links{
-    color: #ffffff;
-    margin: 0 10px;
+    justify-content: space-between; */
+
+    margin: 2vw 3vw;
+    position: relative;
 }
 
-/*sun-moon*/
-.sun-moon{
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-around;
-    width: 60px;
-    height: 20px;
-    background-color: #303030;
-    padding: 5px;
-    border-radius: 30px;
+.gradient-text {
+    /* background: linear-gradient(45deg, #ff5733, #ffbd33, #33ff57, #3388ff); */
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--prim); /* Fallback for Firefox */
+}
+
+.logo-text{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: 1.5vw;
+    position: absolute;
+    left: 0;
+    top: 0.2vw;
+}
+
+.menus{
+    border: 0.15vw solid var(--srim);
+    border-radius: 1vw;
+    padding: 0.3vw;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.menu{
+    padding: 0.2vw 1vw;
+    color: var(--tprim);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.78vw;
     cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.right-menu{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.78vw;
+    text-decoration: none;
+    color: var(--tprim);
+    position: absolute;
+    right: 0;
+    top: 0.6vw;
 }
 
-@media only screen and (min-width: 680px) and (max-width: 1000px) {
-   /*header*/
-header{
-    top:0; right: 0px;
-}
-.head,.one,.two,.about,.motivation,.skills,.projects,.contact{
-    max-width: 1080px;
-    margin: 0 auto;
-}
-.head{
-    padding: 0 40px;
-}
-}
-
-/* Mobile Styles */
-@media only screen and (min-width: 300px) and (max-width: 680px) {
-    header{
-        display: none;
-    }
+.active-menu{
+    background-color: var(--srim);
+    border-radius: 1vw;
 }

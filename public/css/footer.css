@@ -1,25 +1,9 @@
-footer{
+.footer-line{
+    font-family: 'Doto', sans-serif;
+    color: #fff;
+    font-size: 0.8vw;
+    width: 100%;
     text-align: center;
-    padding: 10px;
-    margin-top: 100px;
-    color: #f8f8f8;
-    background-color: #232323;
-    font-size: 18px;
+    position: fixed;
+    bottom: 0.5vw;
 }
-
-@media only screen and (min-width: 680px) and (max-width: 1000px) {
-    footer{
-        padding: 8px;
-        margin-top: 70px;
-        font-size: 16px;
-    }
-}
-
-/* Mobile Styles */
-@media only screen and (min-width: 300px) and (max-width: 680px) {
-    footer{
-        padding: 5px;
-        margin-top: 50px;
-        font-size: 14px;
-    }
-  }

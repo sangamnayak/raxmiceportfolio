@@ -1,0 +1,112 @@
+@import url('variables.css');
+
+.myAvatar{
+    width: 5vw;
+}
+.GridHead{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3vw;
+    color: var(--tprim);
+}
+.gridSec{
+    background-color: none;
+    border: 0.15vw solid var(--srim);
+    border-radius: 1.5vw;
+    position: relative;
+    overflow: visible !important;
+}
+.insideGrid{
+    margin: 1.3vw;
+    height: calc(100% - 2vw);
+}
+.insideGridWM{
+    margin: 0;
+    height: calc(100%);
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+.iframeradius{
+    border-radius: 1vw;
+    background-color: none;
+    border: 0.2vw solid var(--srim);
+    width: 100%;
+    height: 100%;
+}
+.linkDiv{
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--prim);
+}
+.linkIcon {
+    position: absolute;
+    bottom: 0.5vw;
+    left: 1vw;
+    width: 2vw;
+    height: 2vw;
+    border: 0.15vw solid var(--srim);
+    border-radius: 50%;
+    background-color: var(--prim);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    pointer-events: auto;
+    z-index: 20;
+}
+.insideGridWM:hover > .linkIcon {
+    transform: rotate(0deg);
+}
+
+
+/* Projects Grid */
+.projectGrid{
+    border: 0.15vw solid var(--srim);
+    border-radius: 1.5vw;
+    position: relative;
+    overflow: hidden;
+}
+.projectGrid:hover > .AnimUrl{
+    width: 7.5vw;
+}
+.AnimUrl{
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    height: 2vw;
+    width: 2vw;
+    border: 0.15vw solid var(--srim);
+    border-radius: 1.2vw;
+    overflow: hidden;
+    background-color: var(--prim);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.AnimUrl:Hover{
+    width: 7.5vw;
+}
+.AnimArrow{
+    width: 2vw;
+    height: 2vw;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+.AnimUrl:hover > .AnimArrow{
+    transform: rotate(0deg);
+}
+.AnimUrlP{
+    color: var(--tprim);
+    padding: 0 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8vw;
+}
+.AnimProject{
+    width: 65%;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 8%;
+    left: 30%;
+}
+/*  */
